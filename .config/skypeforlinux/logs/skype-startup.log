@@ -1,0 +1,30 @@
+ioctl failed for wlan0, errno = 19 (No such device)
+ioctl failed for wlp2s0, errno = 19 (No such device)
+ioctl failed for wlp3s0, errno = 19 (No such device)
+ioctl failed for wlan0, errno = 19 (No such device)
+ioctl failed for wlp2s0, errno = 19 (No such device)
+ioctl failed for wlp3s0, errno = 19 (No such device)
+ioctl failed for wlan0, errno = 19 (No such device)
+ioctl failed for wlp2s0, errno = 19 (No such device)
+ioctl failed for wlp3s0, errno = 19 (No such device)
+ioctl failed for wlan0, errno = 19 (No such device)
+ioctl failed for wlp2s0, errno = 19 (No such device)
+ioctl failed for wlp3s0, errno = 19 (No such device)
+
+(skypeforlinux:974): libnotify-WARNING **: 19:35:27.710: Failed to connect to proxy
+
+(skypeforlinux:974): libnotify-WARNING **: 19:35:27.711: Failed to connect to proxy
+
+(skypeforlinux:974): libnotify-WARNING **: 19:35:27.712: Failed to connect to proxy
+
+(skypeforlinux:974): libnotify-WARNING **: 19:35:34.841: Failed to connect to proxy
+
+(skypeforlinux:974): libnotify-WARNING **: 19:35:34.842: Failed to connect to proxy
+
+(skypeforlinux:974): libnotify-WARNING **: 19:35:34.843: Failed to connect to proxy
+
+(skypeforlinux:974): libnotify-WARNING **: 19:36:01.687: Failed to connect to proxy
+
+(skypeforlinux:974): libnotify-WARNING **: 19:36:01.688: Failed to connect to proxy
+
+(skypeforlinux:974): libnotify-WARNING **: 19:36:01.689: Failed to connect to proxy

@@ -1,0 +1,29 @@
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][User] User is Admin: false, detection ran: true
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] initialized with an ECS config provider.
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] initialized.
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] start() called.
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] Update interval set to 14400000
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] Starting unexplicit update check as the updater was started.
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] Checking for updates, explicit check: false
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] Platform updater feed URL not set.
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] Setting update feed url to: https://get.skype.com/s4l-update?version=8.36.76.38&os=linux&ring=preview&app=s4l&t=1547248970014
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] Checking for update.
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][LinuxAutoUpdater] Checking for update
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][LinuxAutoUpdater] Update not found.
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Updater] Update not found.
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO]Skype logging system information:
+============================================================
+  Version 1431/8.36.76.38/
+  Ring: preview
+  Operating System: Linux, linux 4.20.0-arch1-1-ARCH
+  Architecture: x64
+  Total Memory: 16037.3359375 MB
+  Free Memory: 10615.36328125 MB
+  Load average: 1.02587890625,0.642578125,0.6943359375
+  Device Id: c9a41ad5d12c7a6bdcdf4e94c5a03433
+  CPU Topology: [{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":1916,"times":{"user":5675500,"nice":1800,"sys":743700,"idle":40174900,"irq":49500}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":1912,"times":{"user":4869100,"nice":900,"sys":648200,"idle":41090600,"irq":33400}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":1940,"times":{"user":5655900,"nice":1100,"sys":759400,"idle":40231700,"irq":43200}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":2917,"times":{"user":4950400,"nice":1200,"sys":652400,"idle":40887100,"irq":154900}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":3513,"times":{"user":5524300,"nice":1800,"sys":773300,"idle":40272600,"irq":89900}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":3885,"times":{"user":4772900,"nice":1000,"sys":699900,"idle":41173600,"irq":31500}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":1899,"times":{"user":6049500,"nice":1800,"sys":697100,"idle":39850400,"irq":43000}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":1890,"times":{"user":4795500,"nice":700,"sys":601900,"idle":41245300,"irq":33000}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":3216,"times":{"user":6079300,"nice":2200,"sys":708600,"idle":39822800,"irq":50400}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":3221,"times":{"user":4922400,"nice":1100,"sys":610800,"idle":41027900,"irq":68300}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":4003,"times":{"user":4905900,"nice":1100,"sys":1306000,"idle":40194100,"irq":240400}},{"model":"AMD Ryzen 5 1600X Six-Core Processor","speed":3259,"times":{"user":4504400,"nice":600,"sys":606300,"idle":41505800,"irq":34100}}]
+============================================================
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Application] checking-for-update. Explicit check = false
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Application] update-not-available. Explicit check = false
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Application] Commandline arguments: {"_":[],"executed-from":"/home/luca","pid":6786}
+[Fri, 11 Jan 2019 23:22:50 GMT][INFO][Application] Calling app.quit

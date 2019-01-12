@@ -1,0 +1,333 @@
+;-------------------------------------------------------------------------------
+;	V A R I A B L E S
+;-------------------------------------------------------------------------------
+
+[colors]
+background = #131313
+background-alt = #333
+
+foreground = #b2b2b2
+foreground-alt = #ee3333
+
+accentForeground = ${xrdb:color7:#222}
+accentBackground = ${xrdb:color0:#222}
+accent = ${xrdb:color2:#222}
+alert = ${xrdb:color3:#222}
+
+trans = #90292b2e
+yellow = #edb857
+white = #eee
+grey = #444444
+pink = #d75f87
+blue = #4f97d7
+purple = #875faf
+green = #20ad80
+red = #ee3333
+
+;-------------------------------------------------------------------------------
+;	B A R S
+;-------------------------------------------------------------------------------
+
+[bar/secondary]
+monitor = DP-1
+width = 100%
+height = 18
+radius = 1.0
+fixed-center = true
+background = ${colors.trans}
+foreground = ${colors.foreground}
+
+font-0 = Hack:pixelsize=13;2
+
+
+modules-left = i3 arrow0 i3index arrow
+modules-center = arrow6 date arrow7
+
+[bar/main]
+monitor=HDMI-0
+width = 100%
+height = 18
+radius = 1.0
+fixed-center = true
+
+background = ${colors.trans}
+foreground = ${colors.foreground}
+
+font-0 = Hack:pixelsize=13;2
+
+modules-left = i3 arrow0 i3index arrow
+modules-center = arrow6 date arrow7
+modules-right = arrow1 memory arrow2 cpu arrow3 volume arrow4 eth arrow5
+
+tray-position = right
+tray-background = ${colors.background}
+tray-padding = 4
+
+;-------------------------------------------------------------------------------
+;	D E C O R A T I O N S
+;-------------------------------------------------------------------------------
+
+
+[module/arrow]
+; pink to trans
+type = custom/text
+content = " "
+content-font = 2
+content-foreground = ${colors.accent}
+content-background = ${colors.trans}
+
+[module/arrow0]
+; background to accent
+type = custom/text
+content = " "
+content-font = 2
+content-foreground = ${colors.background}
+content-background = ${colors.accent}
+
+[module/arrow1]
+; pink to trans
+type = custom/text
+content = " "
+content-font = 2
+content-foreground = ${colors.pink}
+content-background = ${colors.trans}
+
+[module/arrow2]
+; blue to pink
+type = custom/text
+content = " "
+content-font = 2
+content-foreground = ${colors.blue}
+content-background = ${colors.pink}
+
+[module/arrow3]
+; purple to blue
+type = custom/text
+content = " "
+content-font = 2
+content-foreground = ${colors.purple}
+content-background = ${colors.blue}
+
+[module/arrow4]
+; green to purple
+type = custom/text
+content = " "
+content-font = 2
+content-foreground = ${colors.green}
+content-background = ${colors.purple}
+
+[module/arrow5]
+; bg to green
+type = custom/text
+content = " "
+content-font = 2
+content-foreground = ${colors.background}
+content-background = ${colors.green}
+
+[module/arrow6]
+; trans to white
+type = custom/text
+content = " "
+content-font = 2
+content-foreground = ${colors.yellow}
+content-background = ${colors.trans}
+
+[module/arrow7]
+; white to trans
+type = custom/text
+content = " "
+content-font = 2
+content-foreground = ${colors.yellow}
+content-background = ${colors.trans}
+
+;-------------------------------------------------------------------------------
+;	M O D U L E S
+;-------------------------------------------------------------------------------
+
+[module/i3index]
+type = internal/i3
+format = <label-state>
+
+pin-workspaces = true
+
+label-focused = "%name% "
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.accent}
+
+label-unfocused =
+label-urgent =
+
+label-visible = "%name% "
+label-visible-foreground = ${colors.background}
+label-visible-background = ${colors.accent} 
+
+[module/i3]
+type = internal/i3
+format = <label-state><label-mode>
+
+index-sort = true
+enable-click = false
+enable-scroll = false
+
+ws-icon-0 = 0;*
+ws-icon-default = ○
+
+; Only show workspaces on the same output as the bar
+pin-workspaces = true
+
+label-mode = " %mode%"
+label-mode-foreground = ${colors.red}
+label-mode-background = ${colors.background}
+
+; focused = Active workspace on focused monitor
+label-focused = " ● "
+label-focused-foreground = ${colors.accent}
+label-focused-background = ${colors.background}
+
+; unfocused = Inactive workspace on any monitor
+label-unfocused = " %icon% "
+label-unfocused-foreground = ${colors.foreground}
+label-unfocused-background = ${colors.background}
+
+label-visible = " %icon% "
+label-visible-foreground = ${colors.foreground}
+label-visible-background = ${colors.background}
+
+; urgent = Workspace with urgency hint set
+label-urgent = " ● "
+label-urgent-foreground = ${colors.alert}
+label-urgent-background = ${colors.background}
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " CPU "
+format-prefix-background = ${colors.blue}
+format-prefix-foreground = ${colors.background}
+label = %percentage%%
+label-background = ${colors.blue}
+label-foreground = ${colors.background}
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " RAM "
+format-prefix-background = ${colors.pink}
+format-prefix-foreground = ${colors.background}
+label = %percentage_used%%
+label-background = ${colors.pink}
+label-foreground = ${colors.background}
+
+[module/eth]
+type = internal/network
+interface = enp4s0
+interval = 3.0
+
+format-connected-underline = #55aa55
+format-connected-background = ${colors.green}
+format-connected-foreground = ${colors.background}
+label-connected = " %upspeed% %downspeed% %local_ip%"
+
+format-disconnected =
+;format-disconnected = <label-disconnected>
+;format-disconnected-underline = ${self.format-connected-underline}
+;label-disconnected = %ifname% disconnected
+;label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/date]
+type = internal/date
+interval = 1
+
+date = " %d.%m.%Y"
+date-alt = " %A, %d %B %Y"
+
+time = "%H:%M:%S "
+
+label = "%date% %time%"
+label-alt = " test "
+label-foreground = ${colors.background}
+label-background = ${colors.yellow}
+
+[module/volume]
+type = internal/alsa
+
+; mapping = true
+; format-volume = <label-volume>
+
+format-volume-prefix = " VOL "
+
+format-volume-prefix-background = ${colors.purple}
+format-volume-prefix-foreground = ${colors.background} 
+
+label-volume = %percentage%%
+label-volume-background = ${colors.purple}
+label-volume-foreground = ${colors.background}
+label-muted = " MUTED "
+label-muted-background = ${colors.purple}
+label-muted-foreground = ${colors.background}
+
+[module/temperature]
+type = internal/temperature
+thermal-zone = 0
+warn-temperature = 60
+
+format = <ramp> <label>
+format-underline = #f50a4d
+format-warn = <ramp> <label-warn>
+format-warn-underline = ${self.format-underline}
+
+label = %temperature%
+label-warn = %temperature%
+label-warn-foreground = ${colors.secondary}
+
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
+ramp-foreground = ${colors.foreground-alt}
+
+[module/powermenu]
+type = custom/menu
+
+format-spacing = 1
+
+label-open = 
+label-open-foreground = ${colors.secondary}
+label-close =  cancel
+label-close-foreground = ${colors.secondary}
+label-separator = |
+label-separator-foreground = ${colors.foreground-alt}
+
+menu-0-0 = reboot
+menu-0-0-exec = menu-open-1
+menu-0-1 = power off
+menu-0-1-exec = menu-open-2
+
+menu-1-0 = cancel
+menu-1-0-exec = menu-open-0
+menu-1-1 = reboot
+menu-1-1-exec = sudo reboot
+
+menu-2-0 = power off
+menu-2-0-exec = sudo poweroff
+menu-2-1 = cancel
+menu-2-1-exec = menu-open-0
+
+[module/music]
+type = custom/script
+interval = 1
+
+label = %output:0:45:...%
+exec = ~/comfy_guration/scripts/polybar/poly_music.sh
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+
+[global/wm]
+margin-top = 5
+margin-bottom = 5
+
+; vim:ft=dosini
