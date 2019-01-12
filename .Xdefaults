@@ -1,0 +1,15 @@
+urxvt.depth: 32
+urxvt.background: rgba:0000/0000/0200/c800
+URxvt.borderColor: rgba:0000/0000/0200/c800
+urxvt.scrollBar: false
+urxvt.urlLauncher: chromium
+urxvt.antialias:  true
+urxvt.underlineURLs:  True
+URxvt.letterSpace: -1
+Xft.antialias: true
+URxvt.keysym.Shift-Control-V: eval:paste_clipboard
+URxvt.keysym.Shift-Control-C: eval:selection_to_clipboard
+URxvt.font:     xft:bitstream vera sans mono:size=11:antialias=true,xft:Inconsolata\ for\ Powerline:pixelsize=17:antialias=true:hinting=true,xft:3270medium\ nerd\ font:pixelsize=17
+URxvt.boldFont: xft:bitstream vera sans mono:bold:size=11:antialias=true,xft:Inconsolata\ for\ Powerline:pixelsize=17:antialias=true:hinting=true,xft:3270medium\ nerd\ font:pixelsize=17
+URxvt.iso14755: false
+URxvt.iso14755_52: false
