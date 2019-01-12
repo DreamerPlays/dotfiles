@@ -1,0 +1,23 @@
+2019/01/12-19:42:12.004 4531 Reusing MANIFEST /home/luca/.config/chromium/Default/Session Storage/MANIFEST-000001
+2019/01/12-19:42:12.004 4531 Recovering log #47
+2019/01/12-19:42:12.004 4531 Level-0 table #51: started
+2019/01/12-19:42:12.009 4531 Level-0 table #51: 15006 bytes OK
+2019/01/12-19:42:12.012 4531 Delete type=0 #47
+2019/01/12-19:51:34.512 4bf3 Level-0 table #54: started
+2019/01/12-19:51:34.515 4bf3 Level-0 table #54: 14189 bytes OK
+2019/01/12-19:51:34.517 4bf3 Delete type=0 #52
+2019/01/12-19:58:24.152 4bf3 Level-0 table #56: started
+2019/01/12-19:58:24.162 4bf3 Level-0 table #56: 20098 bytes OK
+2019/01/12-19:58:24.164 4bf3 Delete type=0 #53
+2019/01/12-20:59:38.076 4bf3 Level-0 table #58: started
+2019/01/12-20:59:38.079 4bf3 Level-0 table #58: 15484 bytes OK
+2019/01/12-20:59:38.088 4bf3 Delete type=0 #55
+2019/01/12-20:59:38.088 4bf3 Compacting 4@0 + 1@1 files
+2019/01/12-20:59:38.094 4bf3 Generated table #59@0: 708 keys, 54813 bytes
+2019/01/12-20:59:38.094 4bf3 Compacted 4@0 + 1@1 files => 54813 bytes
+2019/01/12-20:59:38.096 4bf3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2019/01/12-20:59:38.097 4bf3 Delete type=2 #54
+2019/01/12-20:59:38.097 4bf3 Delete type=2 #56
+2019/01/12-20:59:38.097 4bf3 Delete type=2 #58
+2019/01/12-20:59:38.097 4bf3 Delete type=2 #51
+2019/01/12-20:59:38.097 4bf3 Delete type=2 #49
