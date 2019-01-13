@@ -1,6 +1,6 @@
 urxvt.depth: 32
-urxvt.background: rgba:0000/0000/0200/c800
-URxvt.borderColor: rgba:0000/0000/0200/c800
+urxvt.background: rgba:0000/0000/0000/6000
+URxvt.borderColor: rgba:0000/0000/0000/6000
 urxvt.scrollBar: false
 urxvt.urlLauncher: chromium
 urxvt.antialias:  true
