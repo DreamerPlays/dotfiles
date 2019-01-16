@@ -1,0 +1,19 @@
+#!/bin/bash
+export DISPLAY=":1"
+if [ "$2" = "started" ]; then
+	sudo -u luca pactl load-module module-loopback latency_msec=120
+	sudo -u luca xrandr --output DP-1 --off &
+	sleep 1 &
+	sudo -u luca wal -s -i /home/luca/Pictures/bg.jpg &
+	sleep 2 &
+	sudo -u luca i3-msg restart
+fi
+
+if [ "$2" = "stopped" ]; then
+	sudo -u luca pactl unload-module module-loopback
+	sudo -u luca xrandr --output DP-1 --mode 1920x1080 --pos 1920x-380 --rate 144 &
+	sleep 1 &
+	sudo -u luca wal -s -i /home/luca/Pictures/bg.jpg &
+	sleep 2 &
+	sudo -u luca i3-msg restart
+fi

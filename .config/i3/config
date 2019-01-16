@@ -15,6 +15,8 @@ exec --no-startup-id skypeforlinux
 exec --no-startup-id discord
 exec --no-startup-id compton -b --vsync none --refresh-rate 144 --blur-background --blur-background-fixed --blur-kern '5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,'
 exec --no-startup-id wal -i ~/Pictures/bg.jpg
+exec --no-startup-id /usr/bin/gnome-keyring-daemon --start --components=secrets
+exec --no-startup-id barrier
 
 
 set_from_resource $fg i3wm.color7 #f0f0f0
